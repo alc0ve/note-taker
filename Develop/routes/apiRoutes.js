@@ -5,16 +5,14 @@ const { v4: uuidv4 } = require('uuid');
 //database to store notes
 const notes = require('../db/db.json');
 
-router.get("/notes", (req, res) => {
-    let results = notes;
-    res.json(results);
-  });
+router.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/notes.html'));
+});
 
-  router.post("/notes", (req, res) => {
-    req.body.id = uuidv4();
-    const newNote = createNewNote(req.body, notes);
-    res.json(newNote);
-  });  
+
+router.get('/api/notes', (req, res) => {
+  res.json(note)
+});
 
 
 module.exports = router;
