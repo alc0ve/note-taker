@@ -11,7 +11,7 @@ router.get('/notes', (req, res) => {
 
 
 router.get('/api/notes', (req, res) => {
-  res.json(note)
+  res.json(notes)
 });
 
 
