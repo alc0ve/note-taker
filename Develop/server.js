@@ -8,10 +8,13 @@ const PORT = process.env.PORT || 3001;
 //instantiate the app
 const app = express();
 
+//middleware
 //Use static server to serve the website
 app.use(express.static('public'));
 //for parsing application
 app.use(express.urlencoded({ extended: true }));
+//parsing incoming JSON data
+app.use(express.json());
 
 app.use('/', htmlRoutes);
 app.use('/api', apiRoutes);
