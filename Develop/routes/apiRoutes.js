@@ -6,10 +6,39 @@ const { v4: uuidv4 } = require('uuid');
 //database to store notes
 const notes = require('../db/db.json');
 
-router.get('/notes', (res, req) => {
+router.get('/notes', (req, res) => {
+    // res.sendFile(path.join(__dirname, '../db/db.json'));
+
     console.log('check get notes', req);
     //handles all the notes
-    res.json(notes)
+    console.log(notes);
+    res.json(notes);
+});
+
+//route uses a url param :id to match the id of user's specific note to view
+router.get('/notes', (req, res) => {
+    for (let i = 0; i < notes.length; i++) {
+        if (notes[i].id === req.params.id) {
+            res.json(notes[i]);
+        }
+    }
+});
+
+//creates a new note object with a unique id when user makes a new note
+//adds it to the note array 
+//pushes the new note array to the db.json file
+router.post('/notes', (req, res) => {
+    const someNewNote = {
+        "title": req.body.title,
+        "text": req.body.text,
+        "id": uuidv4()
+    }
+    notes.push(someNewNote)
+    fs.writeFileSync(
+        path.join(__dirname, '../db/db.json'),
+        JSON.stringify(notes, null, 2)
+    )
+    res.json(notes);
 });
 
 module.exports = router;
