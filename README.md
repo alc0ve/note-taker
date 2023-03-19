@@ -1,64 +1,25 @@
 # 11 Express.js: Note Taker
 
-## Your Task
+## Description
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+This is an application that can be used to write and save notes. It will use an Express.js back end and will save and retrieve note data from a JSON file. This application's front end was created already by default starter code. I built the back end and connected the back end to the front end.
+The entire application was then successfully deployed to Heroku.
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
-
-
-## User Story
-
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
+## Table of Contents
 
 
-## Acceptance Criteria
-
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
 
 
-## Mock-Up
+## Installation
 
-The following images show the web application's appearance and functionality:
+No installation is necessary to use this application.
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+## Usage (How to)
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
-
-
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+Opening the link brings you to the application's landing page. Click the 'Get Started' button to start creating your notes.
+Enter a new note title in the bigger text box and the note details in the smaller text box. Once you've added text to these two sections, a save icon will appear in the top right corner of the page. Click it to save the note; it will populate in the left-hand column along with the existing saved notes. To create a new note, click the plus sign in the top right corner.
+To view an existing note, click on its title. To delete a note, click the trash can displayed for that note.
+To return to the landing page, click the 'Note Taker' button in the top left corner.
 
 
 ## Bonus
