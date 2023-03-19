@@ -1,4 +1,4 @@
-# 11 Express.js: Note Taker
+# Note Taker
 
 ## Description
 
@@ -10,10 +10,11 @@ The entire application was then successfully deployed to Heroku.
 - [Installation](#installation)
 - [Usage (How to)](#usage)
 - [Deployment](#deployment)
+- [Technologies](#technologies)
+- [Tests](#tests)
 - [Credits](#credits)
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
 
 ## Installation
 
@@ -30,78 +31,30 @@ To return to the landing page, click the 'Note Taker' button in the top left cor
 
 Heroku deployment: https://damp-crag-05718.herokuapp.com/
 
+![Notetaker-homepage](https://user-images.githubusercontent.com/117237641/226190080-10ca6e7c-8671-4248-bb38-58f1f8f245bb.png)
+
+![Notetaker-landingpage](https://user-images.githubusercontent.com/117237641/226190131-4d5a8b22-fd4d-4d88-a909-a404478be0d9.png)
+
+![Notetaker-demo](https://user-images.githubusercontent.com/117237641/226190138-e483a2de-b49a-4390-94c0-68401d76f5e4.png)
+
 ## Technologies
 
 Node.js, Express.js, JavaScript, HTML, CSS, Bootstrap
 
-## Grading Requirements
+## Tests
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+No tests necessary at this time.
 
-This Challenge is graded based on the following criteria: 
+## Credits
 
+[Starter Code](https://github.com/coding-boot-camp/miniature-eureka)
 
-### Technical Acceptance Criteria: 40%
+My classmates that helped me get the ball rolling, of course! :)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+## License
 
-  * Application front end must connect to an Express.js back end.
+No license for this project.
 
-  * Application back end must store notes that have a unique id in a JSON file.
+## How to Contribute
 
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-# note-taker
+For contributions, please contact me!
