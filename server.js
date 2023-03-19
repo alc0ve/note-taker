@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require('path');
-const htmlRoutes = require('./Develop/routes/htmlRoutes');
-const apiRoutes = require('./Develop/routes/apiRoutes');
+const htmlRoutes = require('./htmlRoutes');
+const apiRoutes = require('./apiRoutes');
 
 
 //Use static server to serve the website
