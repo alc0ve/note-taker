@@ -35,7 +35,23 @@ router.post('/notes', (req, res) => {
     }
     notes.push(someNewNote)
     fs.writeFileSync(
-        path.join(__dirname, '../db/db.json'),
+        path.join(__dirname, './db.json'),
+        JSON.stringify(notes, null, 2)
+    )
+    res.json(notes);
+});
+
+//define route for handling delete request
+//uses url parameter :id to match id of the note the user wants to delete
+//server response by removing id'd note from array & writing updated note array to updated db.json file
+router.delete('/notes/:id', (req, res) => {
+    for (let i = 0; i < notes.length; i++) {
+        if (notes[i].id === req.params.id) {
+            notes.splice(i, 1);
+        }
+    }
+    fs.writeFileSync(
+        path.join(__dirname, './db.json'),
         JSON.stringify(notes, null, 2)
     )
     res.json(notes);

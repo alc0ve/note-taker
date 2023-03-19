@@ -7,8 +7,13 @@ The entire application was then successfully deployed to Heroku.
 
 ## Table of Contents
 
-
-
+- [Installation](#installation)
+- [Usage (How to)](#usage)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [License](#license)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
 
 ## Installation
 
@@ -21,13 +26,13 @@ Enter a new note title in the bigger text box and the note details in the smalle
 To view an existing note, click on its title. To delete a note, click the trash can displayed for that note.
 To return to the landing page, click the 'Note Taker' button in the top left corner.
 
+## Deployment
 
-## Bonus
+Heroku deployment: https://damp-crag-05718.herokuapp.com/
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+## Technologies
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
+Node.js, Express.js, JavaScript, HTML, CSS, Bootstrap
 
 ## Grading Requirements
 
